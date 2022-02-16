@@ -5,10 +5,8 @@ import logo from "../../assets/logo.png";
 
 export function Header() {
   return <nav id="header">
-    <span>
-      <img src={logo}/>
-      <img src={fullLogo}/>
-    </span>
+    <img src={logo} id="logo" />
+    <img src={fullLogo} id="full-logo"/>
     <a href="#about-us">ЗА НАС</a>
     <a href="#team">ЕКИП</a>
     <a href="#projects">ПРОЕКТИ</a>

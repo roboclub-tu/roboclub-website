@@ -19,11 +19,11 @@
     font-size: 30px;
   }
 
-  img{
-    padding: 16px 14px;
-    height: 50px;
-
-  }
+  // img{
+  //   padding-top: 1vh;
+  //   height: 8vh;
+  //   display: inline-block;
+  // }
 
   ul{
     list-style-type: none;
@@ -31,8 +31,20 @@
 
   span{
     display: inline-block;
-    float:left;
   }
 }
 
-  
+#logo{
+  margin-top: 1.5vh;
+  margin-left: 5%;
+  height: 7vh;
+  display: inline-block;
+}
+
+#full-logo{
+  margin-top: 1.5vh;
+  margin-left: 1vh;
+  height:6vh;
+  display: inline-block;
+}
+
