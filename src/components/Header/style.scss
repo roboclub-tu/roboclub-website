@@ -1,3 +1,38 @@
 #header {
-  height: 100px;
+  height: 10vh;
+  overflow: hidden;
+  background-color: #f1f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-right: 10px;
+
+  a {
+    float: right;
+    display: block;
+    color: #333333;
+    font-family: "Phenomena";
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  img{
+    padding: 16px 14px;
+    height: 50px;
+
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  span{
+    display: inline-block;
+    float:left;
+  }
 }
+
+  
