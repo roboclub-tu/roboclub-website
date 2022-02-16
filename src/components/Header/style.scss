@@ -6,32 +6,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  margin-right: 10px;
 
-  a {
-    float: right;
-    display: block;
-    color: #333333;
-    font-family: "Phenomena";
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-  }
-
-  // img{
-  //   padding-top: 1vh;
-  //   height: 8vh;
-  //   display: inline-block;
-  // }
 
   ul{
     list-style-type: none;
   }
+}
 
-  span{
-    display: inline-block;
-  }
+.links {
+  float: right;
+  display: block;
+  color: #333333;
+  font-family: "Phenomena";
+  font-size: 5vh;
+  text-decoration: none;
+  margin: 10px 10px;
 }
 
 #logo{
