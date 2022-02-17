@@ -11,13 +11,11 @@ function App() {
     <div className="App">
       {/* TODO: put all sections */}
       <Header/>
-      <div className="content">
       <AboutUs />
       <Team />
       <Alumni />
       <Projects/>
       <Contacts/>
-      </div>
     </div>
   );
 }
