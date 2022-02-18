@@ -1,3 +1,30 @@
 #team {
-  height: 100vh;
+  // height: 100vh;
+  height: 285vh;
+  position:relative;
+}
+
+.parallax {
+  background-image: url('../../assets/DSC_pic-hero_banner.png'); 
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:no-repeat;
+  z-index: 0;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.wavesImg{
+  position:absolute;                 
+  bottom:0;                         
+  left:0;  
+  z-index: 1;
 }
