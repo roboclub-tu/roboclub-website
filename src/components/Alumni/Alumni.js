@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./Alumni.scss";
 
 export function Alumni() {
   return <div id="alumni">

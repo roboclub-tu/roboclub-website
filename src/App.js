@@ -7,13 +7,11 @@ import { Header } from "./components/Header/Header";
 import {Contacts} from "./components/Contacts/Contacts"
 import {Team} from "./components/Team/Team"
 import {Projects} from "./components/Projects/Projects"
-import {Welcome} from "./components/Welcome/Welcome"
 function App() {
   return (
     <div className="App">
       {/* TODO: put all sections */}
       <Header/>
-      <Welcome />
       <Team />
       <AboutUs />
       <Projects/>
