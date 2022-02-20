@@ -5,10 +5,18 @@ import logo from "../../assets/logo.png";
 
 export function Header() {
   return <nav id="header">
-    <img src={logo} id="logo" alt="logo" />
-    <img src={fullLogo} id="full-logo" alt="full-logo" />
-    <a href="#about-us" id="first" className="links">ЗА НАС</a>
-    <a href="#team" className="links">ЕКИП</a>
-    <a href="#projects" className="links">ПРОЕКТИ</a>
+      <div id="header-content">
+        {/* <img src={logo} id="logo" alt="logo" />
+        <img src={fullLogo} id="full-logo" alt="full-logo" /> */}
+        <div id="header-logo">
+          <img src={logo} alt="logo" id="logo"/>
+          <img src={fullLogo} alt="logo" id="full-logo"/>
+        </div>
+        <div id="header-links"> 
+          <a href="#about-us" id="first">ЗА НАС</a>
+          <a href="#team">ЕКИП</a>
+          <a href="#projects">ПРОЕКТИ</a>
+        </div>
+      </div>
   </nav>;
 }
