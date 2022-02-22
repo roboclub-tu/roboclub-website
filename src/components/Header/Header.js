@@ -6,8 +6,6 @@ import logo from "../../assets/logo.png";
 export function Header() {
   return <nav id="header">
       <div id="header-content">
-        {/* <img src={logo} id="logo" alt="logo" />
-        <img src={fullLogo} id="full-logo" alt="full-logo" /> */}
         <div id="header-logo">
           <img src={logo} alt="logo" id="logo"/>
           <img src={fullLogo} alt="logo" id="full-logo"/>

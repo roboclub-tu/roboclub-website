@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
 
     #header-content{
       width: 85%;
@@ -16,6 +17,7 @@
 
       #header-links{
         display: flex;
+        flex-wrap:  wrap;
         justify-content: space-between;
         gap: 1.7vw;
         font-family: "Phenomena";
@@ -27,22 +29,44 @@
         }
       }
 
+      @media only screen and (max-width: 600px) {
+        #header-links{
+          a{
+            font-size: 3.5vh;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      #header-dropdown-mobile{
+        img{
+          height:5vh;
+          cursor: pointer;
+          display: none;
+        }
+      }
+      
       #header-logo{
         display: flex;
         height:100%;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-top: 2vh;
+        justify-content: center;
+        align-items: center;
         gap: 0.6vw;
-
+        
         #logo{
           height:8vh;
         }
 
         #full-logo{
-          height:7vh;
+          height:8vh;
+          padding-top:1.4vh;
         }
 
+        @media only screen and (max-width: 950px){
+          #full-logo{
+            display:none;
+          }
+        }
       }
     }
  }
