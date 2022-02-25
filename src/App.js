@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {/* TODO: put all sections */}
-      <Header/>
+      {/* <Header/> */}
       <Team />
       <AboutUs />
       <Projects/>

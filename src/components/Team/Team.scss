@@ -1,24 +1,18 @@
 #team {
   height: 285vh;
-  position:relative;
+  position: relative;
+  background: no-repeat center center cover;
 }
 
 .parallax {
-  background-image: url('../../assets/DSC_pic-hero_banner.png'); 
+  background: url("../../assets/DSC_pic-hero_banner.png") no-repeat center
+    center fixed;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-size: cover;
-          // background-size: 100%; possible solution ?
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   z-index: 0;
-}
-
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
 }
 
 // .wavesContainer{   // Possible solution for the waves.
@@ -28,15 +22,36 @@
 //   z-index: 1;
 //   width: 100%;
 //   height: 90%;
-//   position:absolute;                 
-//   bottom:0;                         
-//   left:0; 
-// } 
+//   position:absolute;
+//   bottom:0;
+//   left:0;
+// }
 
-.wavesImg{
-  position:absolute;                 
-  bottom:0;                         
-  left:0;  
+.wavesImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 1;
-  width:100%;
+  width: 100%;
+}
+
+/* Desktop */
+@media (max-width: 1366px) {
+  #team {
+    height: 285vh;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #team {
+    height: 205vh !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  #team {
+    height: 175vh !important;
+  }
 }
