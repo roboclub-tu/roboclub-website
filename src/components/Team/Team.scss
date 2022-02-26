@@ -15,25 +15,36 @@
   z-index: 0;
 }
 
-// .wavesContainer{   // Possible solution for the waves.
-//   background-image: url("../../assets/waves.svg");
-//   background-size: cover;
-//   background-repeat:no-repeat;
-//   z-index: 1;
-//   width: 100%;
-//   height: 90%;
-//   position:absolute;
-//   bottom:0;
-//   left:0;
-// }
-
-.wavesImg {
+.wavesContainer{
+  border: 3px solid yellow;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
+   bottom: 0;
+    left: 0;
+    width: 100%;
 }
+  .wavesImg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .contentContainer{
+    border: 2px solid red;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    
+    p{
+      padding: 1rem;
+    }
+  }
+
 
 /* Desktop */
 @media (max-width: 1366px) {
@@ -55,3 +66,15 @@
     height: 175vh !important;
   }
 }
+
+// .wavesContainer{   // Possible solution for the waves.
+//   background-image: url("../../assets/waves.svg");
+//   background-size: cover;
+//   background-repeat:no-repeat;
+//   z-index: 1;
+//   width: 100%;
+//   height: 90%;
+//   position:absolute;
+//   bottom:0;
+//   left:0;
+// }
