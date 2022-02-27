@@ -29,12 +29,14 @@
         }
       }
 
-      @media only screen and (max-width: 600px) {
-        #header-links{
-          a{
-            font-size: 3vh;
-            padding-left: 10px;
-          }
+      @media screen and (max-width: 600px),
+             screen and (min-height: 1020px) {
+          #header-links{
+            a{
+              font-size: 3vh;
+              padding-left: 10px;
+              gap: 1.0vw; 
+         }
         }
       }
 
@@ -62,11 +64,22 @@
           padding-top:1.4vh;
         }
 
-        @media only screen and (max-width: 950px){
+        @media screen and (max-width: 950px),
+               screen and (min-height: 1000px){
           #full-logo{
             display:none;
           }
+          #logo{
+            height:5vh;
+          }
         }
+      }
+    }
+
+    @media  screen and (max-width: 600px),
+            screen and (min-height: 1020px) {
+      #header-content{
+        width: 95%;
       }
     }
  }
