@@ -1,37 +1,85 @@
-#header {
-  height: 11.922vh;
-  overflow: hidden;
-  background-color: #f1f2f2;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  ul{
-    list-style-type: none;
-  }
-}
+ #header{
+    position: sticky;
+    top: 0;
+    background-color: #F1F2F2;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
 
-.links {
-  float: right;
-  display: block;
-  color: #333333;
-  font-family: "Phenomena";
-  font-size: 5vh;
-  text-decoration: none;
-  margin: 10px 10px;
-}
+    #header-content{
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-#logo{
-  margin-top: 1.5vh;
-  margin-left: 6vw;
-  height: 7vh;
-  display: inline-block;
-}
+      #header-links{
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content: space-between;
+        gap: 1.7vw;
+        font-family: "Phenomena";
+        
+        a{
+          font-size: 6vh;
+          color: #707070;
+          text-decoration: none;
+        }
+      }
 
-#full-logo{
-  margin-top: 1.5vh;
-  margin-left: 0.4vw;
-  height:6vh;
-  display: inline-block;
-}
+      @media screen and (max-width: 600px),
+             screen and (min-height: 1020px) {
+          #header-links{
+            a{
+              font-size: 3vh;
+              padding-left: 10px;
+              gap: 1.0vw; 
+         }
+        }
+      }
 
+      #header-dropdown-mobile{
+        img{
+          height:5vh;
+          cursor: pointer;
+          display: none;
+        }
+      }
+
+      #header-logo{
+        display: flex;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6vw;
+        
+        #logo{
+          height:8vh;
+        }
+
+        #full-logo{
+          height:8vh;
+          padding-top:1.4vh;
+        }
+
+        @media screen and (max-width: 950px),
+               screen and (min-height: 1000px){
+          #full-logo{
+            display:none;
+          }
+          #logo{
+            height:5vh;
+          }
+        }
+      }
+    }
+
+    @media  screen and (max-width: 600px),
+            screen and (min-height: 1020px) {
+      #header-content{
+        width: 95%;
+      }
+    }
+ }
