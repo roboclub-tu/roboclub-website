@@ -9,7 +9,7 @@ export function AboutUs() {
         <div id="about-us">
             <div id="about-us-container">
                 <div id="about-us-heading">
-                    <h1>Ето малко повече и за нас!</h1>
+                    Ето малко повече и за нас!
                 </div>
                 <div class="about-us-row">
                     <div className="about-us-content">
