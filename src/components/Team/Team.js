@@ -1,4 +1,4 @@
-import './style.scss'
+import './Team.scss'
 
 export function Team(){
     return <div id='team'>

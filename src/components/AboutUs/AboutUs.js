@@ -1,4 +1,4 @@
-import "./style.scss"
+import "./AboutUs.scss"
 
 export function AboutUs() {
     return (
