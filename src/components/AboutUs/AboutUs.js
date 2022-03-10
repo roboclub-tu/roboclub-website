@@ -4,9 +4,10 @@ import imageTwo from "../../assets/2.png"
 import imageThree from "../../assets/3.png"
 import imageFour from "../../assets/4.png"
 
+
 export function AboutUs() {
     return (
-        <div id="about-us">
+            <div id="about-us">
             <div id="about-us-container">
                 <div id="about-us-heading">
                     Ето малко повече и за нас!

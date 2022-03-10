@@ -26,6 +26,7 @@
           font-size: 6vh;
           color: #707070;
           text-decoration: none;
+          cursor: pointer;
         }
       }
 
@@ -54,7 +55,7 @@
         justify-content: center;
         align-items: center;
         gap: 0.6vw;
-        
+        cursor: pointer;
         #logo{
           height:8vh;
         }

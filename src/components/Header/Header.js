@@ -3,17 +3,20 @@ import "./Header.scss";
 import fullLogo from "../../assets/fullLogo.png"; 
 import logo from "../../assets/logo.png";
 
+import { Link } from "react-scroll";
+
+
 export function Header() {
   return <nav id="header">
       <div id="header-content">
         <div id="header-logo">
-          <img src={logo} alt="logo" id="logo"/>
-          <img src={fullLogo} alt="logo" id="full-logo"/>
+          <Link to="team" smooth={true} offset={-70} duration={750}> <img src={logo} alt="logo" id="logo"/></Link>
+          <Link to="team" smooth={true} offset={-70} duration={750}> <img src={fullLogo} alt="logo" id="full-logo"/> </Link>     
         </div>
         <div id="header-links"> 
-          <a href="#about-us" id="first">ЗА НАС</a>
-          <a href="#team">ЕКИП</a>
-          <a href="#projects">ПРОЕКТИ</a>
+          <Link to="team" smooth={true} offset={-95} duration={750}>ЕКИП</Link>
+          <Link to="about-us" smooth={true} offset={-70} duration={750}> ЗА НАС </Link>
+          <Link to="projects" smooth={true} offset={-90} duration={750}>ПРОЕКТИ</Link>
         </div>
       </div>
   </nav>;
